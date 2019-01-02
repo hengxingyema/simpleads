@@ -2,41 +2,70 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>合伙人通知</title>
+	<title>觅马</title>
 	
-	<!--<link rel="stylesheet" href="css/index.css" type="text/css"/>-->
-	<script type="text/javascript">
-		webView.setWebViewClient(new WebViewClient(){
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+	<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	<script type="text/javascript" src="js/index.js"></script>
 
-                try{
-                    if(url.startsWith("tel://")){
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                        startActivity(intent);
-                        return true;
-                    }
-                }catch (Exception e){
-                    return false;
-                }
-                webView.loadUrl(url);
-                return true;
-            }
-        });
-	</script>>
 </head>
+
 <body>
-	<div class="commit" style="font-size: 3vw;">
-		<p style="color: blue;">
-			最新升级消息：
-			觅马出行原客服电话4006667505自11月1号开始更新为 
-			<a href="tel://4001118456" style="color: red;">4001118456</a>
-			点击直接拨打最新客服电话，
-			原号码停止使用
+	<div class="commit" style="font-size: 2.5vw;">
+		<div style="text-align: center;">觅马通知</div>
+		<p>1:为什么要采取固定停车模式？</p>
+		<p>答：是为了更好的规范用户不乱停乱放车辆，给城市造成道路的拥挤和美化。</p>
+		
+		<p>2:为什么会收取移车费</p>
+		<p>答：洋县刚投放初始，停车点设置的还不是很完善，我们后期会增加和完善。</p>
+		<p>3:app地图红色区域为禁停区域，外围蓝色虚线为电子围栏区域，车辆不可驶出电子围栏区域，
+			否则无法交还车辆，并按分钟扣取相关费用。可以选择临时停车
 		</p>
-		<p>各位北城用车用户请注意</p>
-		<p>由于北城居民不让在北城设置停车点，所以即日起取消北城所有停车点！且把北城区设为禁停区域！</p>
-		<p>给您带来不便，敬请谅解！</p>
+		<p>4:为了更好的服务大家出行，可以添加微信：L928777351，也拨打本地运维热线:
+			<a href="tel://18740364304">王新明：18740364304</a>或者
+			<a href="tel://13892091019">张少伟：13892091019</a>
+			（如哪里需要停车位置，车辆过少，速度过低等问题，我们将尽量协调）
+		</p>
+		<p>5:严禁私人加锁，乘载他人，在禁停区域停放车辆，驶出电子围栏区域，
+			非法移动车辆，打砸车辆（详情见app信用规则）
+		</p>
+		
+		<p>6:为了让洋县用户更好的使用车辆和更好的支持我们，
+			觅马总公司和洋县益通伯乐科技有限公司给用户派发骑行券，已回馈用户的支持。
+			<span style="color: red;">每个用户可以领取四张，金额分别是1元，1元，1元，2元</span>
+		</p>
+		
+		<p>点击复制下面兑换券：</p>
+		<p class="commit1">
+			<span id="biao1">mimacx123</span>
+			<input type="button" onClick="copyUrl1()" value="点击复制代码" />
+		</p>
+		<p class="commit1">
+			<span id="biao2">mimacx456</span>
+			<input type="button" onClick="copyUrl2()" value="点击复制代码" />
+		</p>
+		<p class="commit1">
+			<span id="biao3">mimacx12</span>
+			<input type="button" onClick="copyUrl3()" value="点击复制代码" />
+		</p>
+		<p class="commit1">
+			<span id="biao4">mimacx789</span>
+			<input type="button" onClick="copyUrl4()" value="点击复制代码" />
+		</p>
+		
+		<p>领取步骤：
+			打开觅马出行APP-->点击左上角小头像-->点击骑行券-->
+			把复制好的兑换码粘贴到输入框，点击兑换。
+		</p>
+		<p style="text-align: center;">
+			<img src="img/1.jpeg" />
+			<img src="img/2.jpeg" />
+			<img src="img/3.jpeg" />
+		</p>
+		
+		<p style="text-align: center;">停车规范如下⬇️</p>
+		<img src="img/停车规范.jpeg" style="width: 100%;"/>
+		
 	</div>
+	
 </body>
 </html>
